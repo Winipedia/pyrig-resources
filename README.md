@@ -29,6 +29,42 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin that adds resources support.
+
+---
+
+## What is pyrig-resources
+
+pyrig-resources is a plugin for [pyrig](https://github.com/Winipedia/pyrig) that
+adds a dedicated `rig/resources/` package to your project — a conventional home
+for static resource files (templates, data files, assets) that ship with your
+package.
+
+## Features
+
+### Resources Package
+
+Registers a config file that pyrig discovers automatically. When you run
+`pyrig mkroot`, the plugin creates `src/<your_project>/rig/resources/__init__.py`,
+giving you a ready-made package to drop static resources into.
+
+### Zero Configuration
+
+No setup required. Installing the package as a development dependency is the
+whole configuration — pyrig picks up the plugin's config file the next time you
+regenerate your project.
+
+## Usage
+
+Add pyrig-resources as a development dependency in your pyrig project and run
+`pyrig mkroot` to generate the project structure:
+
+```bash
+uv add --group dev pyrig-resources
+uv run pyrig mkroot
+```
+
+After that, `src/<your_project>/rig/resources/` exists and is ready to hold your
+static resource files.
 
 ---
