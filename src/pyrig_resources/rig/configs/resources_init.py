@@ -2,7 +2,7 @@
 
 Defines :class:`ResourcesInitConfigFile`, a config file subclass that pyrig
 discovers automatically when this plugin is installed as a dependency. Running
-``pyrig mkroot`` then creates a ``rig/resources/__init__.py`` inside the target
+``pyrig sync`` then creates a ``rig/resources/__init__.py`` inside the target
 project, giving it a conventional home for static resource files.
 """
 
@@ -17,7 +17,7 @@ class ResourcesInitConfigFile(InitConfigFile):
     """Generate the target project's ``rig/resources/__init__.py``.
 
     This config file is picked up by pyrig's cross-package subclass discovery
-    when ``pyrig mkroot`` runs in any project that depends on this plugin. The
+    when ``pyrig sync`` runs in any project that depends on this plugin. The
     inherited :class:`~pyrig.rig.configs.base.init.InitConfigFile` machinery
     resolves the source module's dotted name into the target project's package
     tree, so ``pyrig_resources.rig.resources`` maps to

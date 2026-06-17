@@ -39,7 +39,7 @@ Drop-in [pyrig](https://github.com/Winipedia/pyrig) plugin that gives your
 project a conventional home for static resource files:
 
 - Adds a `rig/resources/` package to the target project, created and kept in
-  place by `pyrig mkroot`.
+  place by `pyrig sync`.
 
 No configuration required — installing the package as a development dependency
 is the whole setup. Then regenerate your pyrig configs as usual and the plugin's
@@ -49,10 +49,10 @@ config file is picked up automatically.
 
 ```bash
 uv add --group dev pyrig-resources
-uv run pyrig mkroot
+uv run pyrig sync
 ```
 
-After running `pyrig mkroot`, the package lives at
+After running `pyrig sync`, the package lives at
 `src/<your_project>/rig/resources/`, ready for your static files.
 
 ## How it works
@@ -61,7 +61,7 @@ The plugin subclasses one pyrig base class:
 
 - `InitConfigFile` (as `ResourcesInitConfigFile`) to declare the
   `rig/resources/` package. pyrig's cross-package subclass discovery finds this
-  config during `mkroot`, resolves the source module's dotted name into your
+  config during `sync`, resolves the source module's dotted name into your
   project's package tree, and writes the generated `__init__.py` — seeding it
   with the docstring of the plugin's own `resources` package.
 

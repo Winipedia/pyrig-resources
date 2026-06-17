@@ -45,7 +45,7 @@ package.
 ### Resources Package
 
 Registers a config file that pyrig discovers automatically. When you run
-`pyrig mkroot`, the plugin creates `src/<your_project>/rig/resources/__init__.py`,
+`pyrig sync`, the plugin creates `src/<your_project>/rig/resources/__init__.py`,
 giving you a ready-made package to drop static resources into.
 
 ### Zero Configuration
@@ -57,11 +57,11 @@ regenerate your project.
 ## Usage
 
 Add pyrig-resources as a development dependency in your pyrig project and run
-`pyrig mkroot` to generate the project structure:
+`pyrig sync` to generate the project structure:
 
 ```bash
 uv add --group dev pyrig-resources
-uv run pyrig mkroot
+uv run pyrig sync
 ```
 
 After that, `src/<your_project>/rig/resources/` exists and is ready to hold your
