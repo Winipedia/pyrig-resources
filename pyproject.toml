@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "1.0.1"
+version = "1.1.0"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -44,6 +44,7 @@ pyrig-resources = "pyrig.rig.cli.main:main"
 [dependency-groups]
 dev = [
     "bandit>=1.9.4",
+    "deptry>=0.25.1",
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.6",
     "mkdocs-mermaid2-plugin>=1.2.3",
@@ -60,6 +61,7 @@ dev = [
     "ruff>=0.15.17",
     "rumdl>=0.2.17",
     "ty>=0.0.49",
+    "typos>=1.47.2",
 ]
 
 [build-system]
@@ -101,4 +103,12 @@ addopts = "--cov=pyrig_resources --cov-branch --cov-report=term-missing --cov-fa
 skips = [
     "*/tests/*.py",
     "*/test_*/*.py",
+]
+
+[tool.deptry]
+root = "src"
+
+[tool.deptry.per_rule_ignores]
+DEP002 = [
+    "pyrig",
 ]
