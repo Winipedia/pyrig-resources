@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "1.2.1"
+version = "1.3.0"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -53,6 +53,7 @@ dev = [
     "prek>=0.4.5",
     "pyrig-codecov>=1.3.3",
     "pyrig-dev>=2.9.1",
+    "pyrig-fixtures>=0.8.0",
     "pyrig-pypi>=1.5.4",
     "pytest>=9.1.0",
     "pytest-cov>=7.1.0",
