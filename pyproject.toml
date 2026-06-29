@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "1.12.0"
+version = "1.13.0"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
