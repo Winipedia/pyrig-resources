@@ -1,5 +1,5 @@
-"""pyrig integration namespace for this plugin.
+"""Integration namespace that exposes this plugin's contributions to pyrig.
 
-Mirrors the ``pyrig.rig`` package layout so that pyrig's cross-package subclass
-discovery finds this plugin's config files and tools when ``pyrig sync`` runs.
+Mirrors pyrig's `rig` layout so that pyrig's cross-package discovery finds
+what this plugin contributes when `pyrig sync` runs.
 """

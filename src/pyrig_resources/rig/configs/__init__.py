@@ -1,6 +1,5 @@
-"""Config file subclasses contributed by this plugin.
+"""This plugin's config-file contributions to pyrig.
 
-pyrig discovers the ``ConfigFile`` subclasses defined here and validates them
-during ``pyrig sync``, generating or updating the corresponding files in the
-target project.
+pyrig discovers these during `pyrig sync` and generates or updates the
+corresponding files in projects that install the plugin.
 """
