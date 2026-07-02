@@ -32,7 +32,7 @@
 
 ---
 
-## What it does
+## Overview
 
 Drop-in [pyrig](https://github.com/Winipedia/pyrig) plugin that gives your
 project a conventional home for static resource files:
@@ -47,7 +47,7 @@ config file is picked up automatically.
 ## Installation
 
 ```bash
-uv add --group dev pyrig-resources
+uv add pyrig-resources --dev
 uv run pyrig sync
 ```
 
@@ -64,4 +64,7 @@ The plugin subclasses one pyrig base class:
   project's package tree, and writes the generated `__init__.py` — seeding it
   with the docstring of the plugin's own `resources` package.
 
----
+## API Reference
+
+For class- and method-level details, see the [API Reference](api.md), generated
+automatically from the source.

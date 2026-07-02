@@ -32,38 +32,27 @@
 
 ---
 
-## What is pyrig-resources
+## Overview
 
-pyrig-resources is a plugin for [pyrig](https://github.com/Winipedia/pyrig) that
-adds a dedicated `rig/resources/` package to your project — a conventional home
-for static resource files (templates, data files, assets) that ship with your
-package.
+pyrig-resources is a [pyrig](https://github.com/Winipedia/pyrig) plugin that adds
+a conventional `rig/resources/` package to your project — a home for the static
+files (templates, data, assets) that ship with your package.
 
-## Features
+## What it adds
 
-### Resources Package
-
-Registers a config file that pyrig discovers automatically. When you run
-`pyrig sync`, the plugin creates `src/<your_project>/rig/resources/__init__.py`,
-giving you a ready-made package to drop static resources into.
-
-### Zero Configuration
-
-No setup required. Installing the package as a development dependency is the
-whole configuration — pyrig picks up the plugin's config file the next time you
-regenerate your project.
+- **Resources package** — `pyrig sync` creates and maintains a `rig/resources/`
+  package in your project, ready for your static files.
 
 ## Usage
 
-Add pyrig-resources as a development dependency in your pyrig project and run
-`pyrig sync` to generate the project structure:
-
 ```bash
-uv add --group dev pyrig-resources
+uv add pyrig-resources --dev
 uv run pyrig sync
 ```
 
-After that, `src/<your_project>/rig/resources/` exists and is ready to hold your
-static resource files.
+Afterwards the package lives at `src/<your_project>/rig/resources/`.
 
----
+## Documentation
+
+Full documentation, including the auto-generated API reference, is available on
+the [documentation site](https://Winipedia.github.io/pyrig-resources).
