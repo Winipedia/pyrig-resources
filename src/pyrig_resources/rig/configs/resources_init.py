@@ -6,12 +6,12 @@ that package, giving the project a conventional home for static resource files.
 
 from types import ModuleType
 
-from pyrig.rig.configs.base.init import InitConfigFile
+from pyrig.rig.configs.base.init import CopyInitDocstringConfigFile
 
 from pyrig_resources.rig import resources
 
 
-class ResourcesInitConfigFile(InitConfigFile):
+class ResourcesInitConfigFile(CopyInitDocstringConfigFile):
     """Config file that creates a project's `rig/resources/__init__.py`.
 
     pyrig discovers this automatically in any project that installs this
