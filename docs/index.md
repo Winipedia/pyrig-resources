@@ -70,7 +70,7 @@ After running `pyrig sync`, the package lives at
 
 The plugin subclasses one pyrig base class:
 
-- `InitConfigFile` (as `ResourcesInitConfigFile`) to declare the
+- `CopyInitDocstringConfigFile` (as `ResourcesInitConfigFile`) to declare the
   `rig/resources/` package. pyrig's cross-package subclass discovery finds this
   config during `sync`, resolves the source module's dotted name into your
   project's package tree, and writes the generated `__init__.py` — seeding it
