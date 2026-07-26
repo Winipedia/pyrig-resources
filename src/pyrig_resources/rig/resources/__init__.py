@@ -1,1 +1,1 @@
-"""Resource files for this project."""
+"""Static resource files bundled with the project."""

@@ -10,4 +10,6 @@ class TestResourcesInitConfigFile:
     def test_copy_module(self) -> None:
         """Test method."""
         assert ResourcesInitConfigFile.I.copy_module() is resources
-        assert resources.__doc__ == """Resource files for this project."""
+        assert (
+            resources.__doc__ == """Static resource files bundled with the project."""
+        )

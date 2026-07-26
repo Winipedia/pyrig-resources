@@ -1,8 +1,4 @@
-"""Config that scaffolds the target project's `rig/resources/` package.
-
-When a project installs this plugin, `pyrig sync` uses this config to create
-that package, giving the project a conventional home for static resource files.
-"""
+"""Configuration for generating the target project's `rig/resources/__init__.py`."""
 
 from types import ModuleType
 
@@ -12,12 +8,7 @@ from pyrig_resources.rig import resources
 
 
 class ResourcesInitConfigFile(CopyInitDocstringConfigFile):
-    """Config file that creates a project's `rig/resources/__init__.py`.
-
-    pyrig discovers this automatically in any project that installs this
-    plugin; `pyrig sync` then generates the file, seeded with the docstring
-    of the resources package it copies.
-    """
+    """Config file for the target project's `rig/resources/__init__.py`."""
 
     def copy_module(self) -> ModuleType:
         """Return this plugin's `resources` package."""
