@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "3.13.15"
+version = "3.13.16"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -9,10 +9,10 @@ license-files = [
   "LICENSE",
 ]
 authors = [
-  { name = "Winipedia" },
+  { name = "Winipedia", email = "winipedia@gmx.de" },
 ]
 maintainers = [
-  { name = "Winipedia" },
+  { name = "Winipedia", email = "winipedia@gmx.de" },
 ]
 keywords = [
   "pyrig",
