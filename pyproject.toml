@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "3.13.22"
+version = "3.13.25"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -90,6 +90,7 @@ addopts = [
   "--cov=pyrig_resources",
   "--dist=worksteal",
   "--numprocesses=auto",
+  "--report-chars=a",
 ]
 filterwarnings = [
   "error",
