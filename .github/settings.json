@@ -2,6 +2,7 @@
   "repository": {
     "name": "pyrig-resources",
     "description": "A pyrig plugin that adds resources support.",
+    "homepage": "https://Winipedia.github.io/pyrig-resources",
     "default_branch": "main",
     "delete_branch_on_merge": true,
     "allow_update_branch": true,
