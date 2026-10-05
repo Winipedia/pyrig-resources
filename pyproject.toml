@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "3.13.96"
+version = "3.13.97"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -119,3 +119,7 @@ select = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.ryl.rules]
+ALL = "enable"
+key-ordering = "disable"
