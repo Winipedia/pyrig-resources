@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "3.14.34"
+version = "3.14.35"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -128,6 +128,7 @@ strict = true
 [tool.ryl.lint.rules]
 ALL = "enable"
 key-ordering = "disable"
+yaml-directive = "disable"
 
 [tool.vulture]
 paths = [
