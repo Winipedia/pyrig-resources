@@ -1,7 +1,7 @@
 # pyrig-resources
 
 <!-- project-status -->
-[![CI](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-resources/health_check.yml?label=CI&logo=github)](https://github.com/Winipedia/pyrig-resources/actions/workflows/health_check.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-resources/health-check.yml?label=CI&logo=github)](https://github.com/Winipedia/pyrig-resources/actions/workflows/health-check.yml)
 [![CD](https://img.shields.io/github/actions/workflow/status/Winipedia/pyrig-resources/release.yml?label=CD&logo=github)](https://github.com/Winipedia/pyrig-resources/actions/workflows/release.yml)
 [![ProjectTester](https://codecov.io/gh/Winipedia/pyrig-resources/branch/main/graph/badge.svg)](https://codecov.io/gh/Winipedia/pyrig-resources)
 <!-- code-quality -->
