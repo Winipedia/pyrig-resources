@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-resources"
-version = "3.14.74"
+version = "3.14.75"
 description = "A pyrig plugin that adds resources support."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,7 +27,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pyrig>=19.2.0",
+  "pyrig>=19.29.0",
 ]
 
 [project.urls]
