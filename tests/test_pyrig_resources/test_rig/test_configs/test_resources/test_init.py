@@ -1,7 +1,7 @@
 """Test module."""
 
 from pyrig_resources.rig import resources
-from pyrig_resources.rig.configs.resources_init import ResourcesInitConfigFile
+from pyrig_resources.rig.configs.resources.init import ResourcesInitConfigFile
 
 
 class TestResourcesInitConfigFile:

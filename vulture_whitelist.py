@@ -2,7 +2,7 @@
 
 from pyrig.rig.configs.base.copy_module import CopyModuleConfigFile
 
-from pyrig_resources.rig.configs.resources_init import ResourcesInitConfigFile
+from pyrig_resources.rig.configs.resources.init import ResourcesInitConfigFile
 
 _CONFIG_FILE_OVERRIDES = (CopyModuleConfigFile.copy_module,)
 _CONFIG_FILES = (ResourcesInitConfigFile,)
